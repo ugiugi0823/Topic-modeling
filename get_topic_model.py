@@ -12,7 +12,7 @@ def Get_topic_model(args):
 
 
 
-  model_s = SentenceTransformer(f'./{output_path}/{file_list[0]}')
+  model_s = SentenceTransformer(f'./{output_path}/{file_list[1]}')
   topic_model = BERTopic(embedding_model=model_s)
 
 
