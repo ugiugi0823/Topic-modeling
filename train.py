@@ -44,7 +44,7 @@ def Get_train(args):
   # get_model
   model = Get_model(args)
   train_samples, dev_samples = Preprocess(datasets)
-  model_save_path = args.output_path + args.model_name.replace("/", "-") + "-" + datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+  model_save_path = args.output_path + ("/") + args.model_name.replace("/", "-") + "-" + datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
   
 
 
@@ -81,6 +81,7 @@ def Get_train(args):
       save_best_model=True, 
       use_amp=args.use_amp
   )
+  
   print(f'모델 학습이 완료 되었습니다. {args.output_path} 에서 확인 해보세요!')
 
 
