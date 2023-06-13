@@ -1,6 +1,6 @@
 import argparse
 from train import Get_train
-
+from utils import setup
 
 if __name__ == '__main__':
   p = argparse.ArgumentParser()
@@ -16,6 +16,7 @@ if __name__ == '__main__':
 
   
   args = p.parse_args()
+  setup()
   Get_train(args)
 
 
