@@ -1,6 +1,8 @@
 import argparse
 from train import Get_train
 from utils import setup
+from get_topic_model import Get_topic_model
+from get_topic import Get_topic
 
 if __name__ == '__main__':
   p = argparse.ArgumentParser()
@@ -19,6 +21,7 @@ if __name__ == '__main__':
   setup(args)
   Get_train(args)
   Get_topic_model(args)
+  Get_topic(args)
 
 
 
