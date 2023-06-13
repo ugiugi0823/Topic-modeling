@@ -44,7 +44,7 @@ def Get_train(args):
   # get_model
   model = Get_model(args)
   train_samples, dev_samples = Preprocess(datasets)
-  model_save_path = args.output_path + model_name.replace("/", "-") + "-" + datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+  model_save_path = args.output_path + args.model_name.replace("/", "-") + "-" + datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
   
 
 
