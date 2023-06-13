@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
   
   args = p.parse_args()
-  setup()
+  setup(args)
   Get_train(args)
 
 
