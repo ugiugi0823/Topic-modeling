@@ -27,6 +27,8 @@ def Preprocess(datasets):
 
 
 
-def setup():
-  os.makedirs("output", exist_ok=True)
+def setup(args):
+  output_path = args.output_path
+  output_path = output_path.split('/')[-1]
+  os.makedirs(output_path, exist_ok=True)
   
