@@ -1,4 +1,6 @@
 # GLUE STS 내 훈련, 검증 데이터 예제 변환
+from sentence_transformers.readers import InputExample
+
 def Preprocess(datasets):
   train_samples = []
   dev_samples = []
