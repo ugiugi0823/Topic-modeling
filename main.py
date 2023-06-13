@@ -18,6 +18,7 @@ if __name__ == '__main__':
   args = p.parse_args()
   setup(args)
   Get_train(args)
+  Get_topic_model(args)
 
 
 
