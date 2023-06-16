@@ -7,6 +7,7 @@
 !pip install bertopic[visualization]
 !pip install sentence-transformers datasets
 %cd Topic-modeling
+!pip install -U kaleido
 !gdown '1Z0rPt5k74EitHH5XH_waXPRApgdK4IYl&confirm=t'
 
 ```
