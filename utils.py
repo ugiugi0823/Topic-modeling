@@ -40,7 +40,7 @@ def get_db(args):
   raw = ex[['companyName','tweetDate', 'rawContent']]
 
   raw_all = raw.rawContent.values.tolist()
-  raw_all = raw_all[:100]
+  raw_all = raw_all
   print('db 얻기 ',type(raw_all))
   return raw_all
 
