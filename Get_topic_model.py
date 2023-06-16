@@ -17,7 +17,7 @@ def Get_topic_model(args)
 
 
 
-  docs = get_db()
+  docs = get_db(args)
   docc = 'raw_all'
 
   topics, probabilities = topic_model.fit_transform(docs)
