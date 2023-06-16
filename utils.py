@@ -31,8 +31,8 @@ def Preprocess(datasets):
 
 
 # SQLite3 연결
-def get_db():
-  conn = sqlite3.connect('url_check_6_6.db')
+def get_db(args):
+  conn = sqlite3.connect(f'{args.db_name}')
 
   # 쿼리 실행 및 데이터프레임 생성
   query = 'SELECT * FROM tweet;'
