@@ -6,7 +6,7 @@ from get_topic import Get_topic
 
 if __name__ == '__main__':
   p = argparse.ArgumentParser()
-  p.add_argument("--output_path", type=str, default="/content/drive/MyDrive/wxxk/bertopic", help="모델 파일 저장되는 경로를 넣어주세요!") 
+  p.add_argument("--output_path", type=str, default="/content/topic-modeling/bertopic", help="모델 파일 저장되는 경로를 넣어주세요!") 
   p.add_argument("--model_name", type=str, default="ugiugi/inisw08-T5-mlm-adafactor_test", help="원하는 임베이딩 모델 이름을 넣어주세요(허깅페이스)")  
   p.add_argument("--max_seq_length", type=int, default=512, help="max_seg_length 를 정해주세요")  
   p.add_argument("--batch_size", type=int, default=32,  help="batch_size") 
@@ -15,6 +15,7 @@ if __name__ == '__main__':
   p.add_argument("--cls_token",type=bool, default=True, help="cls_token 을 쓸거면 true 해주세요!") 
   p.add_argument("--do_lower", type=bool, default=True, help="소문자 적용") 
   p.add_argument("--db_name", type=str, default="preproc_6_15.db", help="db 이름") 
+  p.add_argument("--drive", type=bool, default=False, help="Drive 저장하고 싶으면 True") 
   
 
 
