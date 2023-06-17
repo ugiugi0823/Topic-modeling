@@ -52,7 +52,7 @@ def get_db(args):
   raw_all = raw.rawContent.values.tolist()
 
   print('db 얻기 ',type(raw_all))
-  return raw_all
+  return raw_all, raw
 
 
 
