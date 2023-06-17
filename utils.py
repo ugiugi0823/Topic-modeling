@@ -41,9 +41,11 @@ def get_db(args):
   raw_all = ex[['companyName','tweetDate', 'rawContent']]
 
   lenn = len(raw) - len(raw.dropna())
-  
+
   print('결측치 제거',lenn)
   raw = raw.dropna()
+  missing_values = raw.isnull().sum()
+  print('결측치가 확실하게 없는지 확인, 0이면 없는 것! ',missing_values)
 
   raw_all = raw.rawContent.values.tolist()
 
