@@ -1,6 +1,6 @@
 import argparse
 from train import get_train
-from utils import setup
+from etc.utils import setup
 from get_topic_model import get_topic_model
 from get_topic import get_topic
 
