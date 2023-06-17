@@ -76,6 +76,20 @@ def setup(args):
   output_path = args.output_path
   output_path = output_path.split('/')[-1]
   os.makedirs(output_path, exist_ok=True)
-  
+
+
+
+
+
+preproc = []
+def get_preproc(doc):
+  for text in doc:
+    text = replaceURL(text)
+    text = removeAtUser(text)
+    text = removeHashtagInFrontOfWord(text)
+    preproc.append(text)
+
+  return pd.Series(preproc)
+
 
   
