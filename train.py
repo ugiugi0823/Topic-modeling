@@ -14,11 +14,11 @@ from datasets import load_dataset
 import warnings
 warnings.filterwarnings('ignore')
 
-from get_model import Get_model
+from get_model import get_model
 from utils import Preprocess
 #args
 
-def Get_train(args):
+def get_train(args):
   # output_path = args.output_path # "/content/drive/MyDrive/LDA/Robert_sentence_transformers/out/training_klue_sts_"
   # model_name = args.model_name # "ugiugi/inisw08-DistilBERT-mlm-adamw_torch"
   # max_seq_length = args.max_seq_length # 512
@@ -42,7 +42,7 @@ def Get_train(args):
 
   datasets = load_dataset("glue", "stsb")
   # get_model
-  model = Get_model(args)
+  model = get_model(args)
   train_samples, dev_samples = Preprocess(datasets)
   model_save_path = args.output_path + ("/") + args.model_name.replace("/", "-")
   
@@ -81,7 +81,14 @@ def Get_train(args):
       save_best_model=True, 
       use_amp=args.use_amp
   )
-  
+  # print('hub 에 모델을 등록합니다.!')
+  # model.save_to_hub(
+  #   organization='ugiugi',
+  #   repo_name=args.repo_name,
+  #   exist_ok=True,
+  #   replace_model_card=True
+  # )
+
   print('모델 학습이 완료 되었습니다!')
 
 
