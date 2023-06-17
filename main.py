@@ -6,7 +6,7 @@ from get_topic import Get_topic
 
 if __name__ == '__main__':
   p = argparse.ArgumentParser()
-  p.add_argument("--output_path", type=str, default="/content/topic-modeling/bertopic", help="모델 파일 저장되는 경로를 넣어주세요!") 
+  p.add_argument("--output_path", type=str, default="/content/topicmodeling/bertopic", help="모델 파일 저장되는 경로를 넣어주세요!") 
   p.add_argument("--model_name", type=str, default="ugiugi/inisw08-T5-mlm-adafactor_test", help="원하는 임베이딩 모델 이름을 넣어주세요(허깅페이스)")  
   p.add_argument("--max_seq_length", type=int, default=512, help="max_seg_length 를 정해주세요")  
   p.add_argument("--batch_size", type=int, default=32,  help="batch_size") 
