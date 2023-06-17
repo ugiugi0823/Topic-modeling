@@ -3,7 +3,7 @@ from bertopic import BERTopic
 from sentence_transformers import SentenceTransformer
 from utils import get_db
 
-def Get_topic_model(args):
+def get_topic_model(args):
   output_path = args.output_path
   model_name = args.model_name.replace("/", "-")
   
