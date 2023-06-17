@@ -14,7 +14,7 @@ def get_topic_model(args):
 
   docs = get_db(args)
   docc = 'raw_all'
-
+  print('DB file이 클수록 오래 걸립니다.!!')
   topics, probabilities = topic_model.fit_transform(docs)
   topic_model.save(f"{output_path}/{docc}_model")
   return print('get_topic_model 종료')
