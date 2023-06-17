@@ -41,6 +41,9 @@ def get_db(args):
   raw = ex[['companyName','tweetDate', 'rawContent']]
 
   raw_all = raw.rawContent.values.tolist()
+  lenn = len(raw_all) - len(raw_all.dropna())
+  
+  print('결측치 제거',lenn)
   raw_all = raw_all.dropna()
   print('db 얻기 ',type(raw_all))
   return raw_all
