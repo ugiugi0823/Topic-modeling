@@ -38,13 +38,15 @@ def get_db(args):
   # query = 'SELECT * FROM tweet;'
   # ex = pd.read_sql_query(query, conn)
   ex = pd.read_csv(f'./data/{args.db_name}')
-  raw = ex[['companyName','tweetDate', 'rawContent']]
+  raw_all = ex[['companyName','tweetDate', 'rawContent']]
 
-  raw_all = raw.rawContent.values.tolist()
-  lenn = len(raw_all) - len(raw_all.dropna())
+  lenn = len(raw) - len(raw.dropna())
   
   print('결측치 제거',lenn)
-  raw_all = raw_all.dropna()
+  raw = raw.dropna()
+
+  raw_all = raw.rawContent.values.tolist()
+
   print('db 얻기 ',type(raw_all))
   return raw_all
 
