@@ -1,7 +1,7 @@
 from bertopic import BERTopic
 import os
 
-def Get_topic(args):
+def get_topic(args):
 
   model_name = args.model_name.replace("/", "-")
   output_path = args.output_path
