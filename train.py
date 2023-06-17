@@ -15,7 +15,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 from get_model import get_model
-from utils import Preprocess
+from utils import etc.preprocess
 #args
 
 def get_train(args):
@@ -43,7 +43,7 @@ def get_train(args):
   datasets = load_dataset("glue", "stsb")
   # get_model
   model = get_model(args)
-  train_samples, dev_samples = Preprocess(datasets)
+  train_samples, dev_samples = preprocess(datasets)
   model_save_path = args.output_path + ("/") + args.model_name.replace("/", "-")
   
 
