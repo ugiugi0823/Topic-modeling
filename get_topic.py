@@ -11,7 +11,7 @@ def Get_topic(args):
   barchart = load_model.visualize_barchart()
   print('Barchart 를 저장하고 있습니다.')
   if args.drive:
-    barchart.write_image(f"/content/drive/Mydrive/inisw08/bertopic/barchart/{model_name}_barchart.png")
+    barchart.write_image(f"/content/drive/MyDrive/inisw08/bertopic/barchart/{model_name}_barchart.png")
   else:
     barchart.write_image(f"/content/inisw08/bertopic/barchart/{model_name}_barchart.png")
   return print('EveryThing is END')
