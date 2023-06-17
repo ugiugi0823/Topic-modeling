@@ -1,7 +1,7 @@
 import os
 from bertopic import BERTopic
 from sentence_transformers import SentenceTransformer
-from utils import get_db
+from etc.utils import get_db, get_preproc
 
 def get_topic_model(args):
   output_path = args.output_path
@@ -12,7 +12,8 @@ def get_topic_model(args):
 
 
 
-  docs = get_db(args)
+  raw_all, raw = get_db(args)
+  docs = get_preproc(raw_all)
   docc = 'raw_all'
   print('DB file이 클수록 오래 걸립니다.!!')
   topics, probabilities = topic_model.fit_transform(docs)
