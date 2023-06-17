@@ -38,7 +38,7 @@ def get_db(args):
   # query = 'SELECT * FROM tweet;'
   # ex = pd.read_sql_query(query, conn)
   ex = pd.read_csv(f'./data/{args.db_name}')
-  raw_all = ex[['companyName','tweetDate', 'rawContent']]
+  raw = ex[['companyName','tweetDate', 'rawContent']]
 
   lenn = len(raw) - len(raw.dropna())
 
