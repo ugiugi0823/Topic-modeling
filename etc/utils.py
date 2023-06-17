@@ -50,7 +50,7 @@ def get_db(args):
   print('결측치가 확실하게 없는지 확인, 0이면 없는 것! ',missing_values)
 
   raw_all = raw.rawContent.values.tolist()
-
+  print('총 데이터 길이',len(raw_all))
   print('db 얻기 ',type(raw_all))
   return raw_all, raw
 
