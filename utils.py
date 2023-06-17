@@ -49,9 +49,9 @@ def get_db(args):
 def setup(args):
   print('구글 Drive 환경에 폴더를 제작합니다.')
   if args.drive:
-    os.makedirs('/content/drive/Mydrive/inisw08', exist_ok=True)
-    os.makedirs('/content/drive/Mydrive/inisw08/bertopic', exist_ok=True)
-    os.makedirs('/content/drive/Mydrive/inisw08/bertopic/barchart', exist_ok=True)
+    os.makedirs('/content/drive/MyDrive/inisw08', exist_ok=True)
+    os.makedirs('/content/drive/MyDrive/inisw08/bertopic', exist_ok=True)
+    os.makedirs('/content/drive/MyDrive/inisw08/bertopic/barchart', exist_ok=True)
 
   
   else:
