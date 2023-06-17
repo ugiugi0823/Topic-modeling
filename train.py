@@ -82,7 +82,7 @@ def Get_train(args):
       use_amp=args.use_amp
   )
   
-  print(f'모델 학습이 완료 되었습니다. {args.output_path} 에서 확인 해보세요!')
+  print('모델 학습이 완료 되었습니다!')
 
 
 
