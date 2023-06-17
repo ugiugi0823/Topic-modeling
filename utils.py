@@ -37,7 +37,7 @@ def get_db(args):
   # # 쿼리 실행 및 데이터프레임 생성
   # query = 'SELECT * FROM tweet;'
   # ex = pd.read_sql_query(query, conn)
-  ex = pd.read_csv(f'{args.db_name}')
+  ex = pd.read_csv(f'./data/{args.db_name}')
   raw = ex[['companyName','tweetDate', 'rawContent']]
 
   raw_all = raw.rawContent.values.tolist()
