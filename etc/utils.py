@@ -6,7 +6,7 @@ import sqlite3
 
 from etc.preproc import replaceURL, removeAtUser, removeHashtagInFrontOfWord
 
-def Preprocess(datasets):
+def preprocess(datasets):
   train_samples = []
   dev_samples = []
   test_samples = []
