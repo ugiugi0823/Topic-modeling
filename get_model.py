@@ -1,5 +1,5 @@
 from sentence_transformers import SentenceTransformer, LoggingHandler, losses, models, util
-def Get_model(args):
+def get_model(args):
 
 
   embedding_model = models.Transformer(model_name_or_path=args.model_name,
