@@ -15,7 +15,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 from get_model import get_model
-from utils import etc.preprocess
+from etc.utils import preprocess
 #args
 
 def get_train(args):
