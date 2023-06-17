@@ -89,7 +89,9 @@ def get_preproc(doc):
     text = removeHashtagInFrontOfWord(text)
     preproc.append(text)
 
-  return pd.Series(preproc)
+  ser = pd.Series(preproc)
+  ser_list = ser.tolist()
+  return ser_list
 
 
   
