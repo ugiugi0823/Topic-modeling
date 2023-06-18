@@ -23,11 +23,18 @@ drive.mount('/content/drive')
 
 
 
-2. 시간이 오래 걸립니다.!
+
+## 🔥 `.sh` 파일을 수정해야 해요!🔥
+- `.sh` 파일에 들어가면 설명해 놓았습니다.!
+
+
+Bertopic모델을 얻기, 시간이 오래 걸립니다.!
 ```
-%cd /content/topic-modeling
 !bash run.sh
 ```
+
+
+
 
 
 3. 결과 확인
