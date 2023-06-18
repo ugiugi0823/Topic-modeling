@@ -45,7 +45,7 @@ Bertopic모델을 얻기, 시간이 오래 걸립니다.!
 ```
 from PIL import Image
 import matplotlib.pyplot as plt
-image = Image.open('/content/drive/MyDrive/inisw08/bertopic/barchart/ugiugi-inisw08-T5-mlm-adafactor_test_barchart.png')
+image = Image.open('/content/drive/MyDrive/inisw08/bertopic/barchart/ugiugi-inisw08-T5-mlm-adafactor_testpreproc_6_2_barchart.png')
 plt.imshow(image)
 plt.axis('off')  
 plt.show()
