@@ -37,7 +37,7 @@ Bertopic모델을 얻기, 시간이 오래 걸립니다.!
 
 
 
-3. 결과 확인
+결과 확인
 ```
 from PIL import Image
 import matplotlib.pyplot as plt
