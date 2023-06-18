@@ -18,7 +18,7 @@ if __name__ == '__main__':
   p.add_argument("--use_amp", action='store_true', help="pytorch 1.6 이상이면, AMP 를 사용") 
   p.add_argument("--cls_token",action='store_true', help="cls_token 을 쓸거면 true 해주세요!") 
   p.add_argument("--do_lower", action='store_true', help="소문자 적용") 
-  p.add_argument("--drive", action='store_true', help="Drive 저장하고 싶으면 True")
+  p.add_argument("--drive", action='store_true', help="Drive 저장하고 싶으면")
   
   
   
