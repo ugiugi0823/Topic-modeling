@@ -20,7 +20,7 @@ huggingface-cli login --token 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
 python main.py \
   --output_path "/content/drive/MyDrive/inisw08/bertopic" \
   --model_name "ugiugi/inisw08-T5-mlm-adafactor_test" \
-  --db_name "preproc_6_2.db" \
+  --db_name "preproc_6_2.csv" \
   --repo_name "T5-BERTopic-bs32-ep100" \
   --max_seq_length 512 \
   --batch_size 32 \
