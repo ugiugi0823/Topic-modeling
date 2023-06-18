@@ -6,7 +6,7 @@
 ### How to Run with Colab
 
 
-[0] 드라이브 연결은 필수입니다.
+0. 드라이브 연결은 필수입니다.
 ```
 if google_drive:
   drive.mount('/content/drive')
@@ -14,21 +14,21 @@ if google_drive:
 
 
 
-[1] 
+1.
 ```
 !git clone https://github.com/ugiugi0823/topic-modeling.git
 ```
 
 
 
-[2] 시간이 오래 걸립니다.!
+2. 시간이 오래 걸립니다.!
 ```
 %cd /content/topic-modeling
 !bash run.sh
 ```
 
 
-[3] 결과 확인
+3. 결과 확인
 ```
 from PIL import Image
 import matplotlib.pyplot as plt
