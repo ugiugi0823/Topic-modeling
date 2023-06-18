@@ -2,13 +2,19 @@
 
 
 
-## 설치 요소
+## How to Run with Colab
+
+
+[1]
 ```
-!pip install bertopic[visualization]
-!pip install sentence-transformers datasets
-%cd Topic-modeling
-!pip install -U kaleido
-!gdown '1Z0rPt5k74EitHH5XH_waXPRApgdK4IYl&confirm=t'
+!git clone https://github.com/ugiugi0823/topic-modeling.git
+```
+
+
+
+
+```
+
 
 ```
 
