@@ -58,7 +58,7 @@ def get_db(args):
 
 
 def setup(args):
-  assert 'drive' in os.listdir('/content') # 당황하지 마세요! 드라이브 연결을 안해놓았어요! 코랩 드라이브 연결해주세요!
+  assert not 'drive' in os.listdir('/content') # 당황하지 마세요! 드라이브 연결을 안해놓았어요! 코랩 드라이브 연결해주세요!
   print('구글 Drive 환경에 폴더를 제작합니다.')
   if args.drive:
     os.makedirs('/content/drive/MyDrive/inisw08', exist_ok=True)
