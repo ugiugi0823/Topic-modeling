@@ -1,5 +1,6 @@
 # Topic-modeling
 
+![image](https://github.com/ugiugi0823/topic-modeling/assets/106899647/9f515358-a9c3-48cb-93d4-953145f7c6e7)
 
 
 ### How to Run with Colab
