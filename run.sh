@@ -1,10 +1,11 @@
 # run.sh
-pip install transformers
-pip install wandb
+pip install bertopic[visualization]
+pip install sentence-transformers datasets
+pip install -U kaleido
 gdown '1wVh8tP0XcOuabv9EUa6hnXiykqjTqQ1t&confirm=t'
-unzip database_csv.zip -d /content/tweet-sa-robert/data
+unzip database_csv.zip -d /content/topic-modeling/data
 
-# 💙 3가지를 수정해 주시면 정상적으로 돌아가요! 💙
+# 💙 1가지를 수정해 주시면 정상적으로 돌아가요! 💙
 
 
 # 1. 허깅페이스 로그인 토큰
@@ -12,13 +13,6 @@ unzip database_csv.zip -d /content/tweet-sa-robert/data
 huggingface-cli login --token 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
 
 
-
-# 2. wandb 로그인 토큰
-# inisw (중요)
-# 2be184e31a96c722bfebdfe35f726042eb8e526c
-# 현욱
-# 122f007f67ba33fd04a03ee9b81489dfb42264a6
-wandb login --relogin '122f007f67ba33fd04a03ee9b81489dfb42264a6'
 
 
 
