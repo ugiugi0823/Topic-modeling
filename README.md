@@ -7,7 +7,7 @@
 - 순서대로 돌려주세요!
 
 
-0. 드라이브 연결은 필수입니다.
+구글 드라이브 연결하기
 ```
 from google.colab import drive
 drive.mount('/content/drive')
@@ -15,7 +15,7 @@ drive.mount('/content/drive')
 
 
 
-1.
+깃 허브 레포 가져오기
 ```
 !git clone https://github.com/ugiugi0823/topic-modeling.git
 %cd topic-modeling
