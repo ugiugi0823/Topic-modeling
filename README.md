@@ -8,8 +8,8 @@
 
 0. 드라이브 연결은 필수입니다.
 ```
-if google_drive:
-  drive.mount('/content/drive')
+from google.colab import drive
+drive.mount('/content/drive')
 ```
 
 
