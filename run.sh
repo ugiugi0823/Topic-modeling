@@ -1,5 +1,5 @@
 # run.sh
-pip install bertopic[visualization]
+pip install bertopic
 pip install sentence-transformers datasets
 pip install -U kaleido
 gdown '1wVh8tP0XcOuabv9EUa6hnXiykqjTqQ1t&confirm=t'
@@ -24,7 +24,7 @@ python main.py \
   --repo_name "T5-BERTopic-bs32-ep100" \
   --max_seq_length 512 \
   --batch_size 32 \
-  --n_epoch 100 \
+  --n_epoch 5 \
   --use_amp \
   --cls_token \
   --do_lower \
