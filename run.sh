@@ -22,20 +22,18 @@ wandb login --relogin '122f007f67ba33fd04a03ee9b81489dfb42264a6'
 
 
 
-# 3. 요기 아래에 --entity_name 에 이름을 wandb 아이디로 해주셔야 합니다.!!
+
 python main.py \
-    --drive True \
-    --data 'result_all' \
-    --batch_size 256 \
-    --optimizer 'sgd' \
-    --learning_rate 5.999e-5 \
-    --epochs 30 \
-    --run_name 'inisw08-twitter-sentiment-analysis-roberta_ep30_bs256_all' \
-    --project_name 'inisw08-twitter-sentiment-analysis-roberta' \
-    --entity_name 'inisw08' \
-    --model_fold_name 'inisw08-twitter-sentiment-analysis-roberta' \
-    --test False \
-    --test_data 'test_1000' \
-    --test_model_name 'ugiugi/inisw08-twitter-sentiment-analysis-roberta-ep30-bs256-all' \
-    --project_test_name 'which-SA-model-is-test'
+  --output_path "/content/drive/MyDrive/inisw08/bertopic" \
+  --model_name "ugiugi/inisw08-T5-mlm-adafactor_test" \
+  --db_name "preproc_6_15.db" \
+  --repo_name "T5-BERTopic-bs32-ep100" \
+  --max_seq_length 512 \
+  --batch_size 32 \
+  --n_epoch 100 \
+  --use_amp \
+  --cls_token \
+  --do_lower \
+  --drive 
+  
     
