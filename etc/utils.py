@@ -52,6 +52,7 @@ def get_db(args):
   raw_all = raw.rawContent.values.tolist()
   print('총 데이터 길이',len(raw_all))
   print('db 얻기 ',type(raw_all))
+  print('RAM 용량이, 80GB 가 아니라면, 당장 멈추세요, 코랩 환경이면 A100 이면 겨우 돌아가요!')
   return raw_all, raw
 
 
