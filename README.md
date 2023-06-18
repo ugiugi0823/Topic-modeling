@@ -3,7 +3,8 @@
 ![image](https://github.com/ugiugi0823/topic-modeling/assets/106899647/9f515358-a9c3-48cb-93d4-953145f7c6e7)
 
 
-### How to Run with Colab
+### 코랩으로 쉽게 돌려보기
+- 순서대로 돌려주세요!
 
 
 0. 드라이브 연결은 필수입니다.
@@ -17,6 +18,7 @@ drive.mount('/content/drive')
 1.
 ```
 !git clone https://github.com/ugiugi0823/topic-modeling.git
+%cd topic-modeling
 ```
 
 
